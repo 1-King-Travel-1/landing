@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    background-color: #121212;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.links {
+    float: right;
+
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    color: gray;
+    transform: scale(1.1);
+
+}
+
+.heder {
+    background-image: linear-gradient(#de8680, #fec896);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.heder-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.me {
+    padding: 100px 0;
+}
+
+.heder-title {
+    color: #ffffff;
+    text-shadow: 10px 7px 0px #df6161;
+    font-size: 100px;
+    width: max-content;
+}
+
+.heder-button {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 10px 7px 0px #df6161;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    /* width: 300px; */
+}
+
+.circle-bordered {
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    z-index: 2;
+    animation: circle-border 15s infinite linear;
+
+}
+
+.circle-dashed {
+    position: absolute;
+    right: -300px;
+    bottom: -200px;
+    animation: circle-dashed 10s infinite linear;
+}
+
+.circle1 {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    animation: circle1 10s infinite linear;
+
+}
+
+.circle2 {
+    position: absolute;
+    right: -150px;
+    top: -50px;
+    animation: circle2 10s infinite linear;
+}
+
+.circle3 {
+    position: absolute;
+    left: -50px;
+    bottom: -100px;
+    animation: circle3 10s infinite linear;
+}
+
+.octagon {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    animation: octagon 5s infinite linear;
+}
+
+.triangle {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    animation: triangle 5s infinite linear;
+}
+
+
+/* Расположить фигуры в соответствии с шаблоном */
+/* Доделать анимацию треугольника. https://youtu.be/NbMlkVGaAqQ */
+@keyframes circle-border {
+    0% {
+        left: 50px;
+    }
+
+    50% {
+        left: 700px;
+    }
+
+    100% {
+        left: 50px;
+    }
+
+
+}
+
+@keyframes circle-dashed {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle1 {
+    0% {
+        left: -50px;
+        transform: rotate(0);
+        top: -100px;
+    }
+
+    50% {
+        left: 50px;
+        top: 100px;
+    }
+
+    100% {
+        left: -50px;
+        transform: rotate(360deg);
+        top: -100px;
+    }
+}
+
+@keyframes circle2 {
+    0% {
+        right: -150px;
+        transform: rotate(0);
+        top: -50px;
+    }
+
+    50% {
+        right: 50px;
+        top: 100px;
+    }
+
+    100% {
+        right: -150px;
+        transform: rotate(360deg);
+        top: -50px;
+    }
+}
+
+@keyframes circle3 {
+    0% {
+        left: -50px;
+        bottom: -100px;
+    }
+
+    50% {
+        left: -100px;
+        bottom: -50px;
+    }
+
+    100% {
+        left: -50px;
+        bottom: -100px;
+    }
+}
+
+@keyframes octagon {
+    0% {
+        left: 50%;
+        transform: rotate(0);
+        bottom: 10%;
+    }
+
+    50% {
+        left: 52%;
+        bottom: 2%;
+    }
+
+    100% {
+        left: 50%;
+        transform: rotate(360deg);
+        bottom: 10%;
+    }
+}
+
+@keyframes triangle {
+    0% {
+        left: 50%;
+    }
+
+    50% {
+        left: 52%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+.what-we-do {
+    background-image: linear-gradient(5deg, #de8680, #fec896 70%, #ffffff 70%);
+    padding: 20px;
+}
+
+.do-left,
+.do-right {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.do-text {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px #df6161;
+    width: 90%;
+    margin: auto;
+
+}
+
+.do-right img {
+    height: 100%;
+    width: 80%;
+}
+
+.adv-card {
+    border: solid #fec896 5px;
+    margin: 50px auto;
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+    left: -50px;
+    padding: 30px;
+    box-shadow: 5px 7px 0 #df6161;
+    background-color: #ffffff;
+    z-index: 4;
+}
+
+.mid-card {
+    left: auto;
+    right: -50px;
+}
+
+.adv-card ul {
+    list-style-type: circle;
+}
+
+.advantages {
+    height: 100vh;
+    position: relative;
+}
+
+.adv-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    z-index: 5;
+}
+
+.adv-hexagon {
+    position: sticky;
+    left: 0;
+    top: 40%;
+}
+
+.adv-circle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.adv-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.partfolio {
+    height: 100vh;
+}
+
+.ser-card {
+    border: #fec895 solid;
+    border-radius: 5%;
+    display: inline-block;
+    text-align: center;
+    max-width: 300px;
+    height: 450px;
+    vertical-align: top;
+    margin: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+
+}
+
+.services {
+    height: 80vh;
+    background-image: linear-gradient(160deg, #de8680 50%, #ffffff 50%);
+}
+
+.services hr {
+    border: solid 1px #df6161;
+    width: 55%;
+    margin: 10px auto;
+}
+.services h2{
+    color: #ffffff;
+}
+.cell{
+    border: #df6161 solid 3px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: 2s;
+}
+.cell:hover{
+    transform: scale(0.9);
+    
+}
+table{
+    width: 100%;
+    height: 600px;
+}
+.cell1{
+    background-image: url(img/portfolio/site1.png);
+}
+.cell2{
+    background-image: url(img/portfolio/site2.png);
+}
+.cell3{
+    background-image: url(img/portfolio/site3.png);
+}
+.cell4{
+    background-image: url(img/portfolio/site4.png);
+}
+.contacts{
+    padding: 100px 0;
+    background-image: linear-gradient(#de8680, #fec896);
+}
+.contacts a{
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 10px 7px 0px #df6161;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 300px;
+}
+@media (max-width:390px) {
+    .adv-card{
+        width: 100%;
+        position: static;
+    }
+    .heder-title{
+        font-size: 60px;
+        width: 100%;
+    }
+    .heder-button{
+        padding: 15 px;
+        font-size: 20px;
+    }
+    .menu{
+        position: static;
+    }
+    .links{
+        float: none;
+    }
+    .adv-hexagon{
+        width: 80%;
+    }
+}
