@@ -126,7 +126,8 @@
     position: absolute;
     left: -50px;
     bottom: -100px;
-    animation: circle3 10s infinite linear;
+    animation: circle3 10s infinite linear forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .octagon {
@@ -421,7 +422,7 @@ table{
     margin-top: 30px;
     width: 300px;
 }
-@media (max-width:390px) {
+@media (max-width:420px) {
     .adv-card{
         width: 100%;
         position: static;
