@@ -444,6 +444,20 @@ table{
     .adv-hexagon{
         width: 80%;
     }
+    .me p{
+        padding: 20px;
+    }
+    .do-right, .do-left{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .services{
+        height: fit-content;
+    }
+    .advantages{
+        height: 120vh;
+    }
 }
 @media (max-width:1024px){
     .circle3{
