@@ -148,15 +148,15 @@
 /* Доделать анимацию треугольника. https://youtu.be/NbMlkVGaAqQ */
 @keyframes circle-border {
     0% {
-        left: 50px;
+        transform: translateX(0);
     }
 
     50% {
-        left: 700px;
+        transform: translateX(650px);
     }
 
     100% {
-        left: 50px;
+        transform: translateX(0);
     }
 
 
@@ -246,15 +246,15 @@
 
 @keyframes triangle {
     0% {
-        left: 50%;
+        transform: translateX(0);
     }
 
     50% {
-        left: 52%;
+        transform: translateX(50px);
     }
 
     100% {
-        left: 50%;
+        transform: translateX(0);
     }
 }
 
