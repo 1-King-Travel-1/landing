@@ -126,7 +126,6 @@
     position: absolute;
     left: -50px;
     bottom: -100px;
-    -webkit-animation: circle3 10s infinite linear forwards;
     animation: circle3 10s infinite linear forwards;
 }
 
@@ -211,37 +210,18 @@
     }
 }
 
-@-webkit-keyframes circle3{
-    0% {
-        left: -50px;
-        bottom: -100px;
-    }
-
-    50% {
-        left: -100px;
-        bottom: -50px;
-    }
-
-    100% {
-        left: -50px;
-        bottom: -100px;
-    }
-
-}
 @keyframes circle3 {
     0% {
-        left: -50px;
-        bottom: -100px;
+       transform: translate(0,0);
     }
 
     50% {
-        left: -100px;
-        bottom: -50px;
+
+        transform: translate(-50px,-50px);
     }
 
     100% {
-        left: -50px;
-        bottom: -100px;
+        transform: translate(0,0);
     }
 }
 
