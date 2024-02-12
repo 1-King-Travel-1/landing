@@ -453,7 +453,17 @@ table{
         height: fit-content;
     }
     .advantages{
-        height: 120vh;
+        height: fit-content
+    }
+    .adv-content{
+        position: static;
+    }
+    .adv-bg{
+        z-index: -1;
+    }
+    .partfolio{
+        height: fit-content;
+        padding: 10px;
     }
 }
 /* @media (max-width:1024px){ 
